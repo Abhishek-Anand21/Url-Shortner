@@ -1,4 +1,4 @@
-require('dotenv').confi();
+require('dotenv').config();
 const express = require('express')
 const shortId = require('shortid')
 const createHttpError = require('http-errors')
