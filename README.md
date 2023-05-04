@@ -11,7 +11,7 @@ This is an example of how to make a application which shortens the url entered b
 Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/trulymittal/short-url-nodejs-mongodb
+git clone https://github.com/Abhishek-Anand21/Url-Shortner
 ```
 
 Step 2: cd into the cloned repo and run:
@@ -35,15 +35,3 @@ Step 5: Start the application by
 ```bash
 npm start
 ```
-
-## Author
-
-- [**Truly Mittal**](https://trulymittal.com)
-
-## Contribute
-
-You can fork this repo and send me a PR.
-
-## License
-
-This project is licensed under the MIT License.
