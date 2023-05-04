@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://www.vhv.rs/dpng/d/420-4201075_url-logo-github-logo-clipart-png-download-hyperlink.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Url Shortner</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>URL Shortner</h1>
+
+      <% if (locals.error) { %>
+      <p class="error"><%= error %></p>
+      <% } %>
+
+      <form action="/" method="post">
+        <input type="url" name="url" id="url" placeholder="Paste your long link here..." />
+        <input type="submit" value="create url" />
+      </form>
+
+      <div class="short-url">
+        <% if (locals.short_url) { %>
+        <h3><a href="<%= short_url %>" target="_blank"><%= short_url %> </a></h3>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
